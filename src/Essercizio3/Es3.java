@@ -15,10 +15,13 @@ public class Es3 {
             if (parola.equals(":q")) {
                 break;
             }
+            String risultato = "";
             for (int i = 0; i < parola.length() - 1; i++) {
-                System.out.print(parola.charAt(i) + ", ");
+                risultato = risultato + parola.charAt(i) + ",";
             }
-            System.out.println(parola.charAt(parola.length() - 1));
+            risultato = risultato + parola.charAt(parola.length() - 1);
+            System.out.println(risultato);
         }
     }
 }
+
